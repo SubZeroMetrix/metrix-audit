@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { buildMetadata, organizationSchema, breadcrumbSchema, articleSchema } from '@/lib/seo'
+import { PageHeader } from '@/components/PageHeader'
 
 export const metadata = buildMetadata({
   title: 'Methodology',
@@ -19,15 +20,18 @@ export default function MethodologyPage() {
   })
 
   return (
-    <div className="py-20">
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }} />
 
-      <div className="section-container max-w-3xl">
-        <p className="text-label text-brand-electric mb-3">Methodology</p>
-        <h1 className="text-headline text-gray-900 mb-8">How the Audit Actually Works</h1>
+      <PageHeader
+        eyebrow="Methodology"
+        title="How the Audit Actually Works"
+        breadcrumb={[{ name: 'Home', href: '/' }, { name: 'Methodology', href: '/methodology' }]}
+      />
 
+      <div className="section-container max-w-3xl py-16">
         <div className="prose-content">
           <h2>Nine Questions, Six Signals</h2>
           <p>

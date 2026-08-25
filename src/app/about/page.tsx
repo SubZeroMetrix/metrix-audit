@@ -1,4 +1,5 @@
 import { buildMetadata, organizationSchema, breadcrumbSchema } from '@/lib/seo'
+import { PageHeader } from '@/components/PageHeader'
 
 export const metadata = buildMetadata({
   title: 'About & Disclosure',
@@ -13,14 +14,13 @@ export default function AboutPage() {
   ])
 
   return (
-    <div className="py-20">
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
 
-      <div className="section-container max-w-3xl">
-        <p className="text-label text-brand-electric mb-3">About</p>
-        <h1 className="text-headline text-gray-900 mb-8">About Metrix Audit</h1>
+      <PageHeader eyebrow="About" title="About Metrix Audit" breadcrumb={[{ name: 'Home', href: '/' }, { name: 'About', href: '/about' }]} />
 
+      <div className="section-container max-w-3xl py-16">
         <div className="prose-content">
           <p>
             Metrix Audit is a free, transparent operating diagnostic for contractor and field-service businesses.

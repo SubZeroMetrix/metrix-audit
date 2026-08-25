@@ -1,4 +1,5 @@
 import { buildMetadata, breadcrumbSchema } from '@/lib/seo'
+import { PageHeader } from '@/components/PageHeader'
 import { AuditForm } from './AuditForm'
 
 export const metadata = buildMetadata({
@@ -14,16 +15,15 @@ export default function AuditPage() {
   ])
 
   return (
-    <div className="py-20">
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      <div className="section-container max-w-2xl">
-        <p className="text-label text-brand-electric mb-3">Free -- no email required</p>
-        <h1 className="text-headline text-gray-900 mb-4">The Metrix Audit</h1>
-        <p className="text-lg text-gray-500 mb-12">
-          Nine questions about digital visibility, response speed, reviews, scheduling, documentation, and
-          accountability. Answers marked &quot;not sure&quot; are shown as unknown, not treated as a gap. See your
-          primary signal and recommended first action immediately.
-        </p>
+      <PageHeader
+        eyebrow="Free -- no email required"
+        title="The Metrix Audit"
+        description={'Nine questions about digital visibility, response speed, reviews, scheduling, documentation, and accountability. Answers marked "not sure" are shown as unknown, not treated as a gap. See your primary signal and recommended first action immediately.'}
+        breadcrumb={[{ name: 'Home', href: '/' }, { name: 'Free Audit', href: '/audit' }]}
+      />
+      <div className="section-container max-w-2xl py-16">
         <AuditForm />
       </div>
     </div>
