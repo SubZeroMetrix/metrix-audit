@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { track } from '@vercel/analytics'
 import { QUESTIONS, scoreAudit, type Answer, type AuditResult } from '@/lib/auditCheck'
+import { withAttribution } from '@/lib/attribution'
 
 export function AuditForm() {
   const [answers, setAnswers] = useState<Record<string, Answer>>({})
@@ -66,7 +67,7 @@ export function AuditForm() {
           <div className="card-panel">
             <p className="font-semibold text-gray-900 mb-2">Software for this</p>
             <p className="text-sm text-gray-500 mb-4">Modern Trades CRM handles response speed, follow-up, and scheduling visibility nationally.</p>
-            <a href="https://www.moderntradescrm.com" className="btn-secondary w-full text-center block" onClick={() => track('moderntradescrm_click', { source: 'audit-result' })}>See Modern Trades CRM</a>
+            <a href={withAttribution('https://www.moderntradescrm.com', { source_tool: 'audit', topic: result.primarySignal.id })} className="btn-secondary w-full text-center block" onClick={() => track('moderntradescrm_click', { source: 'audit-result' })}>See Modern Trades CRM</a>
           </div>
           <div className="card-panel">
             <p className="font-semibold text-gray-900 mb-2">Hands-on local help</p>
