@@ -97,7 +97,7 @@ export default function OperatingDomainsPage() {
           <p className="text-gray-700 mb-4">See which of these six is your business&apos;s primary signal right now.</p>
           <Link href="/audit" className="btn-primary">Take the Free Audit</Link>
         </div>
-        <p className="text-xs text-gray-400 mt-8">Last reviewed 2026-08-25.</p>
+        <p className="text-xs text-gray-500 mt-8">Last reviewed 2026-08-25.</p>
       </div>
     </div>
   )

@@ -14,7 +14,7 @@ export function Footer() {
             </p>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Site</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">Site</p>
             <ul className="space-y-2 text-sm">
               <li><Link href="/audit" className="hover:text-white transition-colors">Free Audit</Link></li>
               <li><Link href="/methodology" className="hover:text-white transition-colors">Methodology</Link></li>
@@ -26,7 +26,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Legal</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">Legal</p>
             <ul className="space-y-2 text-sm">
               <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
               <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link></li>
@@ -35,7 +35,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <p className="text-xs text-gray-600 border-t border-white/10 pt-6">
+        <p className="text-xs text-gray-400 border-t border-white/10 pt-6">
           &copy; {new Date().getFullYear()} SubZeroMetrix LLC. Metrix Audit is a diagnostic tool, not a certification,
           rating agency, or licensing body.
         </p>

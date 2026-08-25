@@ -34,20 +34,20 @@ export function AuditForm() {
 
         {result.supportingSignal && (
           <div className="card-panel">
-            <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Supporting signal</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Supporting signal</p>
             <h3 className="text-lg font-bold text-gray-900 mb-2">{result.supportingSignal.title}</h3>
             <p className="text-sm text-gray-600">{result.supportingSignal.whatItMeans}</p>
           </div>
         )}
 
         <div className="card-panel">
-          <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Recommended first action</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Recommended first action</p>
           <p className="text-gray-700">{result.primarySignal.firstAction}</p>
         </div>
 
         {result.verifiedGapQuestions.length > 0 && (
           <div className="card-panel">
-            <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Verified gaps (from your answers)</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Verified gaps (from your answers)</p>
             <ul className="list-disc pl-5 space-y-1 text-sm text-gray-600">
               {result.verifiedGapQuestions.map((q) => <li key={q}>{q}</li>)}
             </ul>
