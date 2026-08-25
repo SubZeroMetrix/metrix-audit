@@ -18,6 +18,9 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/audit" className="hover:text-white transition-colors">Free Audit</Link></li>
               <li><Link href="/methodology" className="hover:text-white transition-colors">Methodology</Link></li>
+              <li><Link href="/operating-domains" className="hover:text-white transition-colors">Operating Domains</Link></li>
+              <li><Link href="/crm-readiness" className="hover:text-white transition-colors">CRM Readiness</Link></li>
+              <li><Link href="/workflow-readiness" className="hover:text-white transition-colors">Workflow Readiness</Link></li>
               <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>

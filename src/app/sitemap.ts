@@ -4,7 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.metrixaudit.com'
   const now = new Date().toISOString()
 
-  const staticRoutes = ['', '/audit', '/methodology', '/operating-domains', '/about', '/contact', '/privacy', '/terms']
+  const staticRoutes = ['', '/audit', '/methodology', '/operating-domains', '/crm-readiness', '/workflow-readiness', '/about', '/contact', '/privacy', '/terms']
 
   return staticRoutes.map((route) => ({
     url: `${siteUrl}${route}`,
