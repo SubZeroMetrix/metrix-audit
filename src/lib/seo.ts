@@ -39,6 +39,7 @@ export function organizationSchema() {
     name: 'Metrix Audit',
     legalName: 'SubZeroMetrix LLC',
     url: SITE_URL,
+    logo: `${SITE_URL}/brand/metrix-audit-logo.png`,
     parentOrganization: { '@type': 'Organization', name: 'SubZeroMetrix LLC' },
   }
 }
