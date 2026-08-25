@@ -12,6 +12,7 @@ export function Header() {
         <nav className="hidden sm:flex items-center gap-8 text-sm font-medium text-gray-600">
           <Link href="/audit" className="hover:text-brand-electric transition-colors">Free Audit</Link>
           <Link href="/methodology" className="hover:text-brand-electric transition-colors">Methodology</Link>
+          <Link href="/operating-domains" className="hover:text-brand-electric transition-colors">Operating Domains</Link>
           <Link href="/about" className="hover:text-brand-electric transition-colors">About</Link>
           <Link href="/contact" className="hover:text-brand-electric transition-colors">Contact</Link>
         </nav>
