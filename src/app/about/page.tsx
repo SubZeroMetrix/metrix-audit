@@ -32,7 +32,11 @@ export default function AboutPage() {
             SubZeroMetrix LLC also owns SubZeroMetrix.com (contractor revenue intelligence) and is affiliated with:
           </p>
           <ul>
-            <li><strong>The Modern Trades Mentor (TMT)</strong> -- local, hands-on contractor consulting in Pinellas County, FL. TMT is an affiliate, not an independent third party.</li>
+            <li>
+              <strong>The Modern Trades Mentor (TMT)</strong> -- local, hands-on contractor consulting in Pinellas
+              County, FL. TMT is an affiliate, not an independent third party. The Modern Trades Mentor LLC has a{' '}
+              <a href="https://www.bbb.org/us/fl/dunedin/profile/consultant/the-modern-trades-mentor-llc-0653-90465091">BBB Business Profile with BBB Serving West Florida</a>.
+            </li>
             <li><strong>Modern Trades CRM</strong> -- a national CRM and follow-up system built by TMT. Also an affiliate.</li>
           </ul>
           <p>
